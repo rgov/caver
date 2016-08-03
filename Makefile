@@ -19,4 +19,7 @@ test:
 	(cd build && cmake --build . --target check-cver)
 	(cd build && cmake --build . --target check-clang-cver)
 
-.PHONY: caver test
+clean:
+	@rm -Rf build
+
+.PHONY: caver test clean
